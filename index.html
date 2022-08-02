@@ -8,11 +8,11 @@
 <link rel="manifest" href="/site.webmanifest">
 </head>
 <img src="https://raw.githubusercontent.com/maksorr2/cat/main1/d3cec8b88e2b6e2b47890853d6b120f3.png" width="500" height="500" hspace="50px" border="5px"> 
-<p>Выполните задания теста:</p>
+<p>Math Test</p>
 <p>4*12 + 7 = <input type="text" id="z_1"></p>
 <p>7-8*2 = <input type="text" id="z_2"></p>
 <p>34*2 + 17 =  <input type="text" id="z_3"></p>
-<button onClick="proverit();">Проверить</button>
+<button onClick="proverit();">Test</button>
 <div id="rezultat"></div>
 <script>
 function proverit(){
@@ -33,6 +33,9 @@ if(otv_uch_3 == pr_otv_zadachi_3){
 ball +=1;
 }
 vsego_zadach = 3;
+if(ball == 3){
+    document.getElementById('rezultat').innerText = 'vk.com'
+}
 procent_vip = ball/vsego_zadach * 100;
 document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
 }
